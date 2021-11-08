@@ -1,0 +1,21 @@
+#
+# Automatically generated make config: don't edit
+# Welcome to use eziot-sdk MenuConfig
+# Wed Mar 10 10:47:15 2021
+#
+
+#
+# Basic Config
+#
+CONFIG_BASIC_MESSAGE_MAXSIZE=16384
+CONFIG_BASIC_LINK_TASK_STACK_SIZE=16384
+
+#
+# TSL Component Config
+#
+# CONFIG_COMPONENT_TSL_ENABLE is not set
+
+#
+# HUB Component Config
+#
+CONFIG_COMPONENT_HUB_SUBLIST_MAX=64

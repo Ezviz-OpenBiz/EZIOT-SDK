@@ -1,0 +1,597 @@
+{
+  "version": null,
+  "capacities": null,
+  "resources": [
+    {
+      "identifier": "PetDryerRes",
+      "title": "宠物烘干机",
+      "resourceCategory": "PetDryerRes",
+      "localIndex": [
+        "0"
+      ],
+      "localIndexRule": null,
+      "dynamic": false,
+      "global": true,
+      "domains": [
+        {
+          "identifier": "attr_test",
+          "title": "attr_test",
+          "props": [
+            {
+              "identifier": "attr_r_bool",
+              "version": "v3.0",
+              "access": "r",
+              "title": null,
+              "schema": {
+                "type": "boolean",
+                "title": ""
+              }
+            },
+            {
+              "identifier": "attr_rw_bool",
+              "version": "v3.0",
+              "access": "rw",
+              "title": null,
+              "schema": {
+                "type": "boolean",
+                "title": ""
+              }
+            },
+            {
+              "identifier": "attr_rw_int",
+              "version": "v3.0",
+              "access": "rw",
+              "title": null,
+              "schema": {
+                "type": "integer",
+                "title": "",
+                "minimum": 10,
+                "maximum": 50
+              }
+            },
+            {
+              "identifier": "attr_r_int",
+              "version": "v3.0",
+              "access": "r",
+              "title": null,
+              "schema": {
+                "type": "integer",
+                "title": "",
+                "exclusiveMinimum": 1,
+                "exclusiveMaximum": 20
+              }
+            },
+            {
+              "identifier": "attr_rw_str",
+              "version": "v3.0",
+              "access": "rw",
+              "title": null,
+              "schema": {
+                "type": "string",
+                "title": "",
+                "minLength": 5,
+                "maxLength": 30
+              }
+            },
+            {
+              "identifier": "attr_r_str",
+              "version": "v3.0",
+              "access": "r",
+              "title": null,
+              "schema": {
+                "type": "string",
+                "title": ""
+              }
+            },
+            {
+              "identifier": "attr_rw_num",
+              "version": "v3.0",
+              "access": "rw",
+              "title": null,
+              "schema": {
+                "type": "number",
+                "title": ""
+              }
+            },
+            {
+              "identifier": "attr_r_num",
+              "version": "v3.0",
+              "access": "r",
+              "title": null,
+              "schema": {
+                "type": "number",
+                "title": ""
+              }
+            },
+            {
+              "identifier": "attr_rw_obj",
+              "version": "v3.0",
+              "access": "rw",
+              "title": null,
+              "schema": {
+                "type": "object",
+                "title": "",
+                "properties": {
+                  "obj_int": {
+                    "type": "integer",
+                    "title": ""
+                  },
+                  "obj_str": {
+                    "type": "string",
+                    "title": ""
+                  },
+                  "obj_int_enum": {
+                    "type": "integer",
+                    "title": "",
+                    "enum": [
+                      0,
+                      1,
+                      2
+                    ],
+                    "enumDesc": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  "obj_int_lim": {
+                    "type": "integer",
+                    "title": "",
+                    "minimum": 1,
+                    "maximum": 10
+                  }
+                },
+                "required": []
+              }
+            },
+            {
+              "identifier": "attr_r_obj",
+              "version": "v3.0",
+              "access": "r",
+              "title": null,
+              "schema": {
+                "type": "object",
+                "title": "",
+                "properties": {
+                  "test_int": {
+                    "type": "integer",
+                    "title": ""
+                  }
+                },
+                "required": []
+              }
+            },
+            {
+              "identifier": "attr_r_array",
+              "version": "v3.0",
+              "access": "r",
+              "title": null,
+              "schema": {
+                "type": "array",
+                "title": "",
+                "items": {
+                  "type": "integer",
+                  "title": ""
+                }
+              }
+            },
+            {
+              "identifier": "attr_rw_array",
+              "version": "v3.0",
+              "access": "rw",
+              "title": null,
+              "schema": {
+                "type": "array",
+                "title": "",
+                "items": {
+                  "type": "object",
+                  "title": "",
+                  "properties": {
+                    "p_int": {
+                      "type": "integer",
+                      "title": "",
+                      "minimum": 10,
+                      "maximum": 50,
+                      "multipleOf": 10
+                    },
+                    "p_enum": {
+                      "type": "integer",
+                      "title": "",
+                      "enum": [
+                        10,
+                        20,
+                        30
+                      ],
+                      "enumDesc": [
+                        "",
+                        "",
+                        ""
+                      ]
+                    }
+                  },
+                  "required": [
+                    "p_int"
+                  ]
+                }
+              }
+            },
+            {
+              "identifier": "attr_rw_int_multi",
+              "version": "v3.0",
+              "access": "rw",
+              "title": null,
+              "schema": {
+                "type": "integer",
+                "title": "",
+                "minimum": 20,
+                "maximum": 50,
+                "multipleOf": 10
+              }
+            },
+            {
+              "identifier": "attr_rw_int_enum",
+              "version": "v3.0",
+              "access": "rw",
+              "title": null,
+              "schema": {
+                "type": "integer",
+                "title": "",
+                "enum": [
+                  0,
+                  1,
+                  2
+                ],
+                "enumDesc": [
+                  "",
+                  "",
+                  ""
+                ]
+              }
+            },
+            {
+              "identifier": "attr_rw_str_enum",
+              "version": "v3.0",
+              "access": "rw",
+              "title": null,
+              "schema": {
+                "type": "string",
+                "title": "",
+                "enum": [
+                  "enum1",
+                  "enum2"
+                ],
+                "enumDesc": [
+                  "",
+                  ""
+                ]
+              }
+            }
+          ],
+          "actions": [],
+          "events": []
+        },
+        {
+          "identifier": "event_test",
+          "title": "event_test",
+          "props": [],
+          "actions": [],
+          "events": [
+            {
+              "identifier": "event_notify",
+              "version": "v3.0",
+              "title": null,
+              "eventType": [
+                "notification",
+                "general"
+              ],
+              "input": {
+                "schema": {
+                  "type": "object",
+                  "title": "",
+                  "properties": {
+                    "basic": {
+                      "type": "object",
+                      "description": "事件基础信息，所有事件都必须携带，不允许接入设备删改",
+                      "properties": {
+                        "ipV4Address": {
+                          "type": "string",
+                          "format": "ipv4",
+                          "description": "设备ipv4地址"
+                        },
+                        "ipV6Address": {
+                          "type": "string",
+                          "format": "ipv6",
+                          "description": "设备ipv6地址"
+                        },
+                        "macAddress": {
+                          "type": "string",
+                          "description": "设备MAC地址"
+                        },
+                        "dateTime": {
+                          "type": "string",
+                          "description": "2018-11-13T20:20:39+08:00",
+                          "maxLength": 19,
+                          "minLength": 19
+                        },
+                        "uuid": {
+                          "type": "string",
+                          "description": "上传事件唯一标识",
+                          "maxLength": 0,
+                          "minLength": 64
+                        },
+                        "timestamp": {
+                          "type": "number",
+                          "title": ""
+                        }
+                      },
+                      "required": [
+                        "dateTime",
+                        "uuid"
+                      ]
+                    },
+                    "notification": {
+                      "type": "object",
+                      "description": "提醒消息基础字段，所有提醒类消息都必须携带",
+                      "properties": {
+                        "relationId": {
+                          "type": "string",
+                          "optional": 1,
+                          "description": "互联互通消息ID",
+                          "maxLength": 0,
+                          "minLength": 64
+                        },
+                        "status": {
+                          "type": "number",
+                          "optional": 1,
+                          "description": "事件状态，1发生，2停止，该字段目前无实际效果，但予以保留",
+                          "enum": [
+                            1,
+                            2
+                          ]
+                        },
+                        "action": {
+                          "type": "number",
+                          "optional": 1,
+                          "description": "事件状态，8：不推送"
+                        },
+                        "location": {
+                          "type": "string",
+                          "optional": 1,
+                          "description": "设备安装位置附加信息"
+                        }
+                      }
+                    }
+                  },
+                  "required": []
+                }
+              }
+            },
+            {
+              "identifier": "event_ext",
+              "version": "v3.0",
+              "title": null,
+              "eventType": [
+                "general"
+              ],
+              "input": {
+                "schema": {
+                  "type": "object",
+                  "title": "",
+                  "properties": {
+                    "basic": {
+                      "type": "object",
+                      "description": "事件基础信息，所有事件都必须携带，不允许接入设备删改",
+                      "properties": {
+                        "ipV4Address": {
+                          "type": "string",
+                          "format": "ipv4",
+                          "description": "设备ipv4地址"
+                        },
+                        "ipV6Address": {
+                          "type": "string",
+                          "format": "ipv6",
+                          "description": "设备ipv6地址"
+                        },
+                        "macAddress": {
+                          "type": "string",
+                          "description": "设备MAC地址"
+                        },
+                        "dateTime": {
+                          "type": "string",
+                          "description": "2018-11-13T20:20:39+08:00",
+                          "maxLength": 19,
+                          "minLength": 19
+                        },
+                        "uuid": {
+                          "type": "string",
+                          "description": "上传事件唯一标识",
+                          "maxLength": 0,
+                          "minLength": 64
+                        },
+                        "timestamp": {
+                          "type": "number",
+                          "title": ""
+                        }
+                      },
+                      "required": [
+                        "dateTime",
+                        "uuid"
+                      ]
+                    },
+                    "ext": {
+                      "type": "object",
+                      "properties": {
+                        "psd": {
+                          "type": "string",
+                          "title": ""
+                        }
+                      },
+                      "required": []
+                    }
+                  },
+                  "required": []
+                }
+              }
+            },
+            {
+              "identifier": "event_null",
+              "version": "v3.0",
+              "title": null,
+              "eventType": [
+                "general"
+              ],
+              "input": {
+                "schema": {
+                  "type": "object",
+                  "title": "",
+                  "properties": {
+                    "basic": {
+                      "type": "object",
+                      "description": "事件基础信息，所有事件都必须携带，不允许接入设备删改",
+                      "properties": {
+                        "ipV4Address": {
+                          "type": "string",
+                          "format": "ipv4",
+                          "description": "设备ipv4地址"
+                        },
+                        "ipV6Address": {
+                          "type": "string",
+                          "format": "ipv6",
+                          "description": "设备ipv6地址"
+                        },
+                        "macAddress": {
+                          "type": "string",
+                          "description": "设备MAC地址"
+                        },
+                        "dateTime": {
+                          "type": "string",
+                          "description": "2018-11-13T20:20:39+08:00",
+                          "maxLength": 19,
+                          "minLength": 19
+                        },
+                        "uuid": {
+                          "type": "string",
+                          "description": "上传事件唯一标识",
+                          "maxLength": 0,
+                          "minLength": 64
+                        },
+                        "timestamp": {
+                          "type": "number",
+                          "title": ""
+                        }
+                      },
+                      "required": [
+                        "dateTime",
+                        "uuid"
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "action_test",
+          "title": "action_test",
+          "props": [],
+          "actions": [
+            {
+              "identifier": "action_null",
+              "version": "v3.0",
+              "direction": "Plt2Dev",
+              "title": null,
+              "input": null,
+              "output": null
+            },
+            {
+              "identifier": "action_int",
+              "version": "v3.0",
+              "direction": "Plt2Dev",
+              "title": null,
+              "input": {
+                "schema": {
+                  "type": "integer",
+                  "title": ""
+                }
+              },
+              "output": null
+            },
+            {
+              "identifier": "action_str",
+              "version": "v3.0",
+              "direction": "Plt2Dev",
+              "title": null,
+              "input": {
+                "schema": {
+                  "type": "string",
+                  "title": ""
+                }
+              },
+              "output": null
+            },
+            {
+              "identifier": "action_num",
+              "version": "v3.0",
+              "direction": "Plt2Dev",
+              "title": null,
+              "input": {
+                "schema": {
+                  "type": "number",
+                  "title": ""
+                }
+              },
+              "output": null
+            },
+            {
+              "identifier": "action_bool",
+              "version": "v3.0",
+              "direction": "Plt2Dev",
+              "title": null,
+              "input": {
+                "schema": {
+                  "type": "boolean",
+                  "title": ""
+                }
+              },
+              "output": null
+            },
+            {
+              "identifier": "action_obj",
+              "version": "v3.0",
+              "direction": "Plt2Dev",
+              "title": null,
+              "input": {
+                "schema": {
+                  "type": "object",
+                  "title": "",
+                  "properties": {}
+                }
+              },
+              "output": null
+            },
+            {
+              "identifier": "action_array",
+              "version": "v3.0",
+              "direction": "Plt2Dev",
+              "title": null,
+              "input": {
+                "schema": {
+                  "type": "array",
+                  "title": "",
+                  "items": {
+                    "type": "object",
+                    "title": "",
+                    "properties": {}
+                  }
+                }
+              },
+              "output": null
+            }
+          ],
+          "events": []
+        }
+      ]
+    }
+  ]
+}
