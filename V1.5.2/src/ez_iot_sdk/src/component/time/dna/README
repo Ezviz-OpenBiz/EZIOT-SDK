@@ -1,5 +1,0 @@
-校时模块启用，需要将本目录下的lwip_sntp.c文件拷贝到dnasystem_firmware/platforms/rda5981n/MbedOS/features/net/FEATURE_LWIP/lwip-interface/lwip/src/core/目录下，
-
-再将sntp_opts.h文件拷贝到dnasystem_firmware/platforms/rda5981n/MbedOS/features/net/FEATURE_LWIP/lwip-interface/lwip/src/include/lwip/apps目录下，
-
-再进行应用的编译。
